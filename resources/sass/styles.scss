@@ -1,8 +1,67 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+$white: #ffffff;
+$light_blue: #8BC1FF;
+$blue: #174F90;
+
 body{
-  margin: 0;
-  #blocco_1{
-    img{
-      width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    #blocco_1{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .blocco_1_text{
+            color: $white;
+            $left: 55px;
+            position: absolute;
+            left: $left;
+            bottom: 100px;
+            width: calc( 50% - #{$left});
+            h2{
+                font-weight: 600;
+                margin: 0 0 21px;
+                font-size: 58px;
+                line-height: 57px;
+                letter-spacing: 0;
+            }
+            h3{
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 35px;
+                letter-spacing: 0;
+                margin: 0 0 25px;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 0;
+                line-height: 24px;
+                margin: 0;
+            }
+            a{
+                display: inline-block;
+                margin-top: 60px;
+                width: 200px;
+                border-radius: 30px;
+                text-align: center;
+                background: linear-gradient(347.250178514065deg, $light_blue, $blue);
+                color: $white;
+                font-size: 15px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 20px;
+                &:hover{
+                  text-decoration: none;
+                }
+            }
+        }
     }
-  }
+    .left-heading{
+        position: absolute;
+        left: -9999px;
+    }
 }
