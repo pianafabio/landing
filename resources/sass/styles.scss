@@ -19,6 +19,13 @@ body{
     }
     #blocco_1{
         position: relative;
+        .navbar{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+          padding: 25px 27px;
+        }
         img{
             width: 100%;
             height: 100vh;
