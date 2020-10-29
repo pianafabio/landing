@@ -9,6 +9,12 @@ const Fullpage = () => (
     //fullpage options
     licenseKey = {'YOUR_KEY_HERE'}
     scrollingSpeed = {1000} /* Options here */
+    navigation = {true}
+    navigationPosition = {'right'}
+    navigationTooltips = {['firstSlide', 'secondSlide']}
+    showActiveTooltip = {true}
+    slidesNavigation = {false}
+    slidesNavPosition = {'bottom'}
 
     render={({ state, fullpageApi }) => {
       return (
@@ -24,11 +30,17 @@ const Fullpage = () => (
               </div>
             </div>
             <button className="blocco_1_scroll" onClick={() => fullpageApi.moveSectionDown()}>
-              Click me to move down
+              Scorri
             </button>
           </div>
           <div className="section">
-            <p>Section 2</p>
+            <p>Sezione 2</p>
+          </div>
+          <div className="section">
+            <p>Section 3</p>
+          </div>
+          <div className="section fp-auto-height">
+            <p>footer</p>
           </div>
         </ReactFullpage.Wrapper>
       );

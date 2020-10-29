@@ -1,4 +1,7 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 
 $white: #ffffff;
@@ -28,6 +31,9 @@ body{
             left: $left;
             bottom: 100px;
             width: calc( 50% - #{$left});
+            @include media-breakpoint-down(lg){
+                width: calc( 100% - #{( $left * 2 )});
+            }
             h2{
                 font-weight: 600;
                 margin: 0 0 21px;
