@@ -8,10 +8,18 @@ $blue: #174F90;
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    .blocco_1_scroll{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX( -50% );
+    }
     #blocco_1{
         position: relative;
         img{
             width: 100%;
+            height: 100vh;
+            object-fit: cover;
         }
         .blocco_1_text{
             color: $white;
