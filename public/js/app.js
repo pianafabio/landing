@@ -68944,7 +68944,7 @@ var Fullpage = function Fullpage() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fullpage_react_fullpage__WEBPACK_IMPORTED_MODULE_2___default.a //fullpage options
   , {
     licenseKey: 'YOUR_KEY_HERE',
-    scrollingSpeed: 1000
+    scrollingSpeed: 500
     /* Options here */
     ,
     navigation: true,

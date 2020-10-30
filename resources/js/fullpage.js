@@ -13,7 +13,7 @@ const Fullpage = () => (
   <ReactFullpage
     //fullpage options
     licenseKey = {'YOUR_KEY_HERE'}
-    scrollingSpeed = {1000} /* Options here */
+    scrollingSpeed = {500} /* Options here */
     navigation = {true}
     navigationPosition = {'right'}
     showActiveTooltip = {false}
