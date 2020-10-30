@@ -6,6 +6,7 @@
 
 $white: #ffffff;
 $light_blue: #8BC1FF;
+$light_blue_1: #5B8BC2;
 $blue: #174F90;
 
 body{
@@ -25,8 +26,9 @@ body{
           left: 0;
           top: 0;
           padding: 25px 27px;
+          border-bottom: .5px solid $light_blue_1;
         }
-        img{
+        .blocco_1_image{
             width: 100%;
             height: 100vh;
             object-fit: cover;

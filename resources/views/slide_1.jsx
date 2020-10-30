@@ -1,14 +1,17 @@
 import gruppo_1 from './../images/Servizio/Group.jpg'
+import logo from './../images/header3/logo-header.jpg'
 import React from 'react';
 
-class Blocco_1 extends React.Component{
+class Slide1 extends React.Component{
   render() {
     return (
       <>
         <div id="blocco_1">
           <nav class="navbar navbar-expand-lg justify-content-between">
             <div class="d-flex align-items-center">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">
+                <img src={logo} className="logo" alt="Logo" />
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -44,4 +47,4 @@ class Blocco_1 extends React.Component{
     }
 }
 
-export default Blocco_1;
+export default Slide1;

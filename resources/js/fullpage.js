@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
-import Blocco_1 from './../views/blocco_1.jsx';
+
+import Slide1 from './../views/slide_1.jsx';
+import Slide2 from './../views/slide_2.jsx';
+import Slide3 from './../views/slide_3.jsx';
+import Slide4 from './../views/slide_4.jsx';
+import Prefooter from './../views/pre_footer.jsx';
+import Footer from './../views/footer.jsx';
 
 const Fullpage = () => (
   <ReactFullpage
@@ -10,8 +16,7 @@ const Fullpage = () => (
     scrollingSpeed = {1000} /* Options here */
     navigation = {true}
     navigationPosition = {'right'}
-    navigationTooltips = {['firstSlide', 'secondSlide']}
-    showActiveTooltip = {true}
+    showActiveTooltip = {false}
     slidesNavigation = {false}
     slidesNavPosition = {'bottom'}
 
@@ -19,19 +24,25 @@ const Fullpage = () => (
       return (
         <ReactFullpage.Wrapper>
           <div className="section">
-              <Blocco_1 />
-              <button className="blocco_1_scroll" onClick={() => fullpageApi.moveSectionDown()}>
-                  Scorri
-              </button>
-          </div>
-          <div className="section">
-            <p>Sezione 2</p>
-          </div>
-          <div className="section">
-            <p>Section 3</p>
+            <Slide1 />
+            <button className="blocco_1_scroll" onClick={() => fullpageApi.moveSectionDown()}>
+                Scorri
+            </button>
           </div>
           <div className="section fp-auto-height">
-            <p>footer</p>
+            <Slide2 />
+          </div>
+          <div className="section fp-auto-height">
+            <Slide3 />
+          </div>
+          <div className="section fp-auto-height">
+            <Slide4 />
+          </div>
+          <div className="section fp-auto-height">
+            <Prefooter />
+          </div>
+          <div className="section fp-auto-height">
+            <Footer />
           </div>
         </ReactFullpage.Wrapper>
       );
