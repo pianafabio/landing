@@ -33,7 +33,7 @@ class Slide3 extends React.Component{
                   </ul>
                   <div className="prodotto_link text-center">
                     <a href="#">
-                      Scopri di più <NextArrow/>
+                      Scopri di più
                     </a>
                   </div>
                   </div>

@@ -5,28 +5,78 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 
 $white: #ffffff;
-$light_blue: #8BC1FF;
-$light_blue_1: #5B8BC2;
-$blue: #174F90;
+$blue_1: #8BC1FF;
+$blue_2: #5B8BC2;
+$blue_3: #174F90;
+$blue_4: #DAE6F4;
+$blue_5: #4A90E2;
 
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    .left-heading{
+        position: absolute;
+        left: -9999px;
+    }
     .blocco_1_scroll{
         position: absolute;
-        bottom: 0;
+        bottom: 41px;
         left: 50%;
         transform: translateX( -50% );
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        width: 25px;
+        height: 40px;
     }
     #blocco_1{
         position: relative;
         .navbar{
-          position: absolute;
-          width: 100%;
-          left: 0;
-          top: 0;
-          padding: 25px 27px;
-          border-bottom: .5px solid $light_blue_1;
+            $left: 27px;
+            position: absolute;
+            width: calc( 100% - #{($left * 2)});
+            left: 0;
+            top: 0;
+            padding: 25px 0;
+            margin: 0 #{$left};
+            border-bottom: .5px solid $blue_2;
+            .navbar-brand{
+                margin-right: 0;
+            }
+            #menu{
+                margin-left: 92px;
+                .nav-item{
+                    margin-right: 35px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+                .nav-link{
+                    color: $white;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0;
+                    font-weight: 600;
+                    padding: 0;
+                }
+            }
+        }
+        #richiedi_info{
+            width: 200px;
+            height: 45px;
+            border-radius: 30px;
+            background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
+            color: $white;
+            text-transform: uppercase;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: bold;
+            letter-spacing: 0;
+            border: 0;
         }
         .blocco_1_image{
             width: 100%;
@@ -70,7 +120,7 @@ body{
                 width: 200px;
                 border-radius: 30px;
                 text-align: center;
-                background: linear-gradient(347.250178514065deg, $light_blue, $blue);
+                background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
                 color: $white;
                 font-size: 15px;
                 line-height: 20px;
@@ -83,8 +133,72 @@ body{
             }
         }
     }
-    .left-heading{
-        position: absolute;
-        left: -9999px;
+    #blocco_2{
+        padding: 99px 0 105.65px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: calc( 100% - 288px );
+            opacity: 20%;
+            background-color: $blue_4;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+        }
+        .container{
+            position: relative;
+            z-index: 1;
+        }
+        h2{
+            margin-bottom: 14.5px;
+            font-size: 52px;
+            line-height: 56px;
+            color: $blue_5;
+            margin-top: 18px;
+            font-weight: 600;
+            text-align: center;
+            .alternate_color{
+                color: $blue_4;
+            }
+        }
+        h3{
+            margin-bottom: 13.5px;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 35px;
+            color: $blue_5;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: $blue_5;
+            margin-bottom: 60px;
+        }
+        .blocco_2_link{
+            margin-bottom: 113.31px;
+            a{
+                display: inline-block;
+                width: 200px;
+                border-radius: 30px;
+                text-align: center;
+                background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
+                color: $white;
+                font-size: 15px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 20px;
+                &:hover{
+                  text-decoration: none;
+                }
+            }
+        }
+        .row_gallery{
+            margin-bottom: 30.04px;
+        }
     }
 }

@@ -7,31 +7,31 @@ class Slide1 extends React.Component{
     return (
       <>
         <div id="blocco_1">
-          <nav class="navbar navbar-expand-lg justify-content-between">
-            <div class="d-flex align-items-center">
-              <a class="navbar-brand" href="#">
+          <nav className="navbar navbar-expand-lg justify-content-between">
+            <div className="d-flex align-items-center">
+              <a className="navbar-brand" href="#">
                 <img src={logo} className="logo" alt="Logo" />
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Voce 1</a>
+              <div className="collapse navbar-collapse" id="menu">
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item active">
+                    <a className="nav-link" href="#">Voce 1</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Voce 2</a>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Voce 2</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Voce 3</a>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Voce 3</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
-              <button>Richiedi Info</button>
+              <button id="richiedi_info">Richiedi Info</button>
             </div>
           </nav>
                 <img src={gruppo_1} className="blocco_1_image" />

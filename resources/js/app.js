@@ -14,5 +14,5 @@ require('./bootstrap');
  */
 
 // require('./components/Example');
-require('./fullpage');
+require('./render_page');
 require('./randomize');
