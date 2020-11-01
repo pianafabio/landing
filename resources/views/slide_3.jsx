@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-import NextArrow from './../images/sezione_modelli/Group 3/modulo-prodotto/Link/Select/open/path.svg';
+import Logo from './../images/path.svg';
 
 import modello_1 from './../images/sezione_modelli/Group 3/modulo-prodotto/A.png';
 import modello_2 from './../images/sezione_modelli/modulo/text/product copy/B.png';
