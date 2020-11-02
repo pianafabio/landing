@@ -202,8 +202,34 @@ body{
         }
     }
     #blocco_3{
+        padding: 98px 0 101px;
         h2{
             font-weight: 600;
+            color: $blue_5;
+            font-size: 52px;
+            line-height: 56px;
+            margin-bottom: 62px;
+        }
+        .prodotto{
+            color: $blue_5;
+            transition: all 1s ease;
+            border-radius: 10px;
+            background-color: $white;
+            box-shadow: 0 15px 25px 0 rgba(0,0,0,0);
+            &:hover{
+                color: $white;
+                background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
+                box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
+            }
+            .prodotto_immagine{
+                height: 280px;
+                img{
+                    height: auto;
+                }
+            }
+            .prodotto_info{
+                padding: 20px;
+            }
         }
     }
 }

@@ -255,6 +255,7 @@
     "find-up": "^3.0.0",
     "findup-sync": "^3.0.0",
     "follow-redirects": "^1.5.10",
+    "fontello-cli": "^0.5.1",
     "for-in": "^1.0.2",
     "forwarded": "^0.1.2",
     "fragment-cache": "^0.2.1",
