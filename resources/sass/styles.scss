@@ -216,10 +216,14 @@ body{
             border-radius: 10px;
             background-color: $white;
             box-shadow: 0 15px 25px 0 rgba(0,0,0,0);
+            position: relative;
+            height: 100%;
+            display: block;
             &:hover{
                 color: $white;
                 background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
                 box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
+                text-decoration: none;
             }
             .prodotto_immagine{
                 height: 280px;
@@ -229,6 +233,64 @@ body{
             }
             .prodotto_info{
                 padding: 20px;
+            }
+            h3{
+                font-size: 30px;
+                line-height: 32px;
+                font-weight: 600;
+                margin-bottom: 2px;
+            }
+            h4{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                margin-bottom: 21px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: normal;
+                margin-bottom: 1px;
+            }
+            ul{
+                padding-left: 14px;
+                margin-bottom: 69px;
+                li{
+                    font-size: 14px;
+                    line-height: 24px;
+                    strong{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .prodotto_link{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .confronto_modelli{
+            a{
+                display: inline-block;
+                margin-top: 60px;
+                width: 240px;
+                border-radius: 30px;
+                text-align: center;
+                background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
+                color: $white;
+                font-size: 15px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 20px;
+                &:hover{
+                  text-decoration: none;
+                }
             }
         }
     }

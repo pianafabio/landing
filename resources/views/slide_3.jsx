@@ -17,8 +17,8 @@ class Slide3 extends React.Component{
             </div>
             <div className="row">
               <div className="col-lg-4">
-                <div className="prodotto">
-                  <div className="text-center prodotto_immagine d-flex aligh-items-center justify-content-center">
+               <a className="prodotto" href="#">
+                  <div className="text-center prodotto_immagine d-flex align-items-center justify-content-center">
                     <img src={modello_1} />
                   </div>
                   <div className="prodotto_info">
@@ -26,21 +26,19 @@ class Slide3 extends React.Component{
                     <h4 className="text-center">Lorem ipsum dolor sit amet</h4>
                     <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <ul>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip ex ea commodo.</li>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip ex ea commodo.</li>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip ex ea commodo.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip ex ea commodo.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip.</li>
                     </ul>
                     <div className="prodotto_link text-center">
-                      <a href="#">
                         Scopri di più <span className="icon-next"></span>
-                      </a>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4">
-                <div className="prodotto">
-                  <div className="text-center prodotto_immagine d-flex aligh-items-center justify-content-center">
+                <a className="prodotto" href="#">
+                  <div className="text-center prodotto_immagine d-flex align-items-center justify-content-center">
                     <img src={modello_2} />
                   </div>
                   <div className="prodotto_info">
@@ -48,21 +46,19 @@ class Slide3 extends React.Component{
                     <h4 className="text-center">Lorem ipsum dolor sit amet</h4>
                     <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <ul>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip ex ea commodo.</li>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip ex ea commodo.</li>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip ex ea commodo.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip ex ea commodo.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip.</li>
                     </ul>
                     <div className="prodotto_link text-center">
-                      <a href="#">
                       Scopri di più <span className="icon-next"></span>
-                      </a>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4">
-                <div className="prodotto">
-                  <div className="text-center prodotto_immagine d-flex aligh-items-center justify-content-center">
+                <a className="prodotto" href="#">
+                  <div className="text-center prodotto_immagine d-flex align-items-center justify-content-center">
                     <img src={modello_3} />
                   </div>
                   <div className="prodotto_info">
@@ -70,21 +66,18 @@ class Slide3 extends React.Component{
                     <h4 className="text-center">Lorem ipsum dolor sit amet</h4>
                     <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <ul>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip ex ea commodo.</li>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip ex ea commodo.</li>
-                      <li>Lorem ipsum dolor: laboris nisi ut aliquip.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip ex ea commodo.</li>
+                      <li><strong>Lorem ipsum dolor:</strong> laboris nisi ut aliquip ex ea commodo.</li>
                     </ul>
                     <div className="prodotto_link text-center">
-                     <a href="#">
                       Scopri di più <span className="icon-next"></span> 
-                      </a>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div className="row">
-              <div className="col-12 text-center">
+              <div className="col-12 text-center confronto_modelli">
                 <a href="">Confronta modelli</a>
               </div>
             </div>
