@@ -147,8 +147,8 @@ body{
             bottom: 0;
             left: 0;
             z-index: -1;
-            border-top-left-radius: 100%;
-            border-top-right-radius: 100%;
+            border-top-left-radius: 50vw;
+            border-top-right-radius: 50vw;
         }
         .container{
             position: relative;
@@ -346,6 +346,85 @@ body{
             &:hover{
                 text-decoration: none;
             }
+        }
+    }
+    #contattaci{
+        background-color: $blue_5;
+        color: $white;
+        padding: 97px 0 100px;
+        h2{
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 32px;
+            strong{
+                font-weight: bold;
+            }
+        }
+        button{
+            margin-top: 63px;
+            width: 200px;
+            border-radius: 30px;
+            text-align: center;
+            background: $white;
+            color: $blue_5;
+            font-size: 15px;
+            line-height: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px;
+            box-shadow: 0 6px 25px 0 rgba(0,0,0,0.2);
+            border: 0;
+        }
+    }
+    footer{
+        padding-top: 35px;
+        .footer_links{
+            color: $blue_5;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: uppercase;
+            a{
+                color: inherit;
+                margin-right: 28px;
+                &:hover{
+                    color: inherit;
+                    text-decoration: none;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .footer_social{
+            a{
+                color: $blue_4;
+                margin-right: 4px;
+                font-size: 40px;
+                line-height: 40px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:hover{
+                    color: inherit;
+                }
+            }
+        }
+        .footer_distance{
+            margin-top: 25px;
+        }
+        .footer_logo{
+            font-size: 16px;
+            line-height: 22px;
+            color: $blue_5;
+            img{
+                margin-right: 21px;
+            }
+        }
+        .footer_breadcrumbs{
+            font-size: 16px;
+            line-height: 22px;
+            color: $blue_5;
+            font-weight: 300;
         }
     }
 }
