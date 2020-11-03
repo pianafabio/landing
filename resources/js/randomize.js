@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-function Randomize() {
+function Randomizer() {
+    function handleClick(e) {
+      e.preventDefault();
+      console.log('Hai cliccato sul link.');
+    }
+  
     return (
-        <div>Test React 2</div>
+      <button id="randomizer" onClick={handleClick}>
+        Randomizer
+      </button>
     );
 }
 
-export default Randomize;
-
-// DOM element
-if (document.getElementById('user')) {
-    ReactDOM.render(<Randomize />, document.getElementById('user'));
-}
+export default Randomizer;

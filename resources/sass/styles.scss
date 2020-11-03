@@ -10,6 +10,7 @@ $blue_2: #5B8BC2;
 $blue_3: #174F90;
 $blue_4: #DAE6F4;
 $blue_5: #4A90E2;
+$blue_6: #8CBAF0;
 
 body{
     margin: 0;
@@ -291,6 +292,59 @@ body{
                 &:hover{
                   text-decoration: none;
                 }
+            }
+        }
+    }
+    #blocco_4{
+        background-color: $blue_6;
+        color: $white;
+        padding: 87px 0 97px;
+        h2{
+            font-size: 52px;
+            line-height: 56px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        h3{
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 50px;
+        }
+        .random_item{
+            h3{
+                margin: 17px 0 3px;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 32px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 24px;
+                margin-bottom: 0px;
+            }
+        }
+        #randomizer{
+            margin-top: 60px;
+            width: 200px;
+            border-radius: 30px;
+            text-align: center;
+            background: $white;
+            color: $blue_5;
+            font-size: 15px;
+            line-height: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px;
+            box-shadow: 0 6px 25px 0 rgba(0,0,0,0.2);
+            border: 0;
+            &:hover{
+                text-decoration: none;
             }
         }
     }

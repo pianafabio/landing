@@ -1,6 +1,8 @@
+import React from 'react';
+
 import gruppo_1 from './../images/Servizio/Group.jpg'
 import logo from './../images/header3/logo-header.jpg'
-import React from 'react';
+import button_scroll from './../images/scroll.svg';
 
 class Slide1 extends React.Component{
   render() {
@@ -42,6 +44,9 @@ class Slide1 extends React.Component{
                     <a href="#">Scopri di più</a>
                 </div>
               </div>
+              <button className="blocco_1_scroll">
+                <img className="scroll" src={button_scroll} />
+              </button>
           </>
       );
     }
