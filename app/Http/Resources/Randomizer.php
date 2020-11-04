@@ -18,25 +18,25 @@ class Randomizer extends JsonResource
         $blocchi = array(
             array(
                 'number' => '1',
-                'icon' => 'icon-1.png',
+                'icon' => 'random_1',
                 'titolo' => 'Random 1',
                 'sottotitolo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             ),
             array(
                 'number' => '2',
-                'icon' => 'icon-2.png',
+                'icon' => 'random_2',
                 'titolo' => 'Random 2',
                 'sottotitolo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             ),
             array(
                 'number' => '3',
-                'icon' => 'icon-3.png',
+                'icon' => 'random_3',
                 'titolo' => 'Random 3',
                 'sottotitolo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             ),
             array(
                 'number' => '4',
-                'icon' => 'icon-4.png',
+                'icon' => 'random_4',
                 'titolo' => 'Random 4',
                 'sottotitolo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             )

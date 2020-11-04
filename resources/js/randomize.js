@@ -1,4 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Slide4 from '../views/slide_4.jsx';
+
+import Icons from '../views/icons.jsx';
 
 function Randomizer() {
     function handleClick(e) {
@@ -6,8 +11,7 @@ function Randomizer() {
       fetch('/randomizer')
       .then(response => response.json())
       .then((jsonData) => {
-        // jsonData is parsed json object received from url
-        console.log(jsonData)
+        Slide4.randomize;
       })
       .catch((error) => {
         // handle your errors here
