@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Resources\Randomizer;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/randomizer', function () {
+    return new Randomizer( null );
 });
