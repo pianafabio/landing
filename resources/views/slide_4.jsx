@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Randomizer from './../js/randomize.js';
-
 import random_1 from './../images/modulo/text/icon/cta/Group 7/random_2.svg';
 import random_2 from './../images/modulo/text/icon/cta/Group 6/random_1.svg';
 import random_3 from './../images/modulo/text/icon/cta/Group 8/random_3.svg';
@@ -9,7 +7,15 @@ import random_4 from './../images/modulo/text/icon/cta/Group 7/random_2.svg';
 
 class Slide4 extends React.Component{
   updateIcons = () => {
-    console.log( 'update' );
+    fetch('/randomizer')
+      .then(response => response.json())
+      .then((jsonData) => {
+        console.log(jsonData);
+      })
+      .catch((error) => {
+        // handle your errors here
+        console.error(error)
+      })
   };
   render() {
     return (
@@ -42,7 +48,9 @@ class Slide4 extends React.Component{
             </div>
             <div className="row">
               <div className="col-12 text-center">
-                <Randomizer />
+                <button id="randomizer" onClick={this.updateIcons}>
+                  Randomizer
+                </button>
               </div>
             </div>
           </div>

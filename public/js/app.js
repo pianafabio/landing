@@ -74163,41 +74163,9 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
   !*** ./resources/js/randomize.js ***!
   \***********************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _views_slide_4_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/slide_4.jsx */ "./resources/views/slide_4.jsx");
-/* harmony import */ var _views_icons_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/icons.jsx */ "./resources/views/icons.jsx");
-
-
-
-
-
-function Randomizer() {
-  function handleClick(e) {
-    e.preventDefault();
-    fetch('/randomizer').then(function (response) {
-      return response.json();
-    }).then(function (jsonData) {
-      _views_slide_4_jsx__WEBPACK_IMPORTED_MODULE_2__["default"].randomize;
-    })["catch"](function (error) {
-      // handle your errors here
-      console.error(error);
-    });
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    id: "randomizer",
-    onClick: handleClick
-  }, "Randomizer");
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Randomizer);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/vagrant/code/landing/resources/js/randomize.js'");
 
 /***/ }),
 
@@ -74311,89 +74279,6 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyl
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
-
-/***/ }),
-
-/***/ "./resources/views/icons.jsx":
-/*!***********************************!*\
-  !*** ./resources/views/icons.jsx ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 7/random_2.svg */ "./resources/images/modulo/text/icon/cta/Group 7/random_2.svg");
-/* harmony import */ var _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 6/random_1.svg */ "./resources/images/modulo/text/icon/cta/Group 6/random_1.svg");
-/* harmony import */ var _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 8/random_3.svg */ "./resources/images/modulo/text/icon/cta/Group 8/random_3.svg");
-/* harmony import */ var _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
- // import { Random } from "./Stocks";
-
-
-
-
-
-
-var Icons = /*#__PURE__*/function (_React$Component) {
-  _inherits(Icons, _React$Component);
-
-  var _super = _createSuper(Icons);
-
-  function Icons() {
-    _classCallCheck(this, Icons);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(Icons, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 text-center random_item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default.a
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 text-center random_item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default.a
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 text-center random_item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default.a
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")));
-    }
-  }]);
-
-  return Icons;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Icons);
 
 /***/ }),
 
@@ -74797,9 +74682,119 @@ var Slide3 = /*#__PURE__*/function (_React$Component) {
   !*** ./resources/views/slide_4.jsx ***!
   \*************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/vagrant/code/landing/resources/views/slide_4.jsx: Support for the experimental syntax 'classProperties' isn't currently enabled (11:15):\n\n\u001b[0m \u001b[90m  9 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mSlide4\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mReact\u001b[39m\u001b[33m.\u001b[39m\u001b[33mComponent\u001b[39m{\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 | \u001b[39m  updateIcons \u001b[33m=\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 | \u001b[39m    console\u001b[33m.\u001b[39mlog( \u001b[32m'update'\u001b[39m )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 | \u001b[39m  }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 | \u001b[39m  render() {\u001b[0m\n\nAdd @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.\nIf you want to leave it as-is, add @babel/plugin-syntax-class-properties (https://git.io/vb4yQ) to the 'plugins' section to enable parsing.\n    at Object._raise (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:799:17)\n    at Object.raiseWithData (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:792:17)\n    at Object.expectPlugin (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:9094:18)\n    at Object.parseClassProperty (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12636:12)\n    at Object.pushClassProperty (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12600:30)\n    at Object.parseClassMemberWithIsStatic (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12507:14)\n    at Object.parseClassMember (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12444:10)\n    at /home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12389:14\n    at Object.withTopicForbiddingContext (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:11417:14)\n    at Object.parseClassBody (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12366:10)\n    at Object.parseClass (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12339:22)\n    at Object.parseStatementContent (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:11619:21)\n    at Object.parseStatement (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:11577:17)\n    at Object.parseBlockOrModuleBlockBody (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12159:25)\n    at Object.parseBlockBody (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:12145:10)\n    at Object.parseTopLevel (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:11508:10)\n    at Object.parse (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:13328:10)\n    at parse (/home/vagrant/code/landing/node_modules/@babel/parser/lib/index.js:13381:38)\n    at parser (/home/vagrant/code/landing/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/home/vagrant/code/landing/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/home/vagrant/code/landing/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)\n    at Function.transform (/home/vagrant/code/landing/node_modules/@babel/core/lib/transform.js:27:41)\n    at transform.next (<anonymous>)\n    at step (/home/vagrant/code/landing/node_modules/gensync/index.js:261:32)\n    at /home/vagrant/code/landing/node_modules/gensync/index.js:273:13\n    at async.call.result.err.err (/home/vagrant/code/landing/node_modules/gensync/index.js:223:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 7/random_2.svg */ "./resources/images/modulo/text/icon/cta/Group 7/random_2.svg");
+/* harmony import */ var _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 6/random_1.svg */ "./resources/images/modulo/text/icon/cta/Group 6/random_1.svg");
+/* harmony import */ var _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 8/random_3.svg */ "./resources/images/modulo/text/icon/cta/Group 8/random_3.svg");
+/* harmony import */ var _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var Slide4 = /*#__PURE__*/function (_React$Component) {
+  _inherits(Slide4, _React$Component);
+
+  var _super = _createSuper(Slide4);
+
+  function Slide4() {
+    var _this;
+
+    _classCallCheck(this, Slide4);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "updateIcons", function () {
+      fetch('/randomizer').then(function (response) {
+        return response.json();
+      }).then(function (jsonData) {
+        console.log(jsonData);
+      })["catch"](function (error) {
+        // handle your errors here
+        console.error(error);
+      });
+    });
+
+    return _this;
+  }
+
+  _createClass(Slide4, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "blocco_4"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-12 text-center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sezione 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row",
+        id: "randoms"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-12 text-center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        id: "randomizer",
+        onClick: this.updateIcons
+      }, "Randomizer"))))));
+    }
+  }]);
+
+  return Slide4;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Slide4);
 
 /***/ }),
 
