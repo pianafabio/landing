@@ -74174,7 +74174,15 @@ __webpack_require__.r(__webpack_exports__);
 function Randomizer() {
   function handleClick(e) {
     e.preventDefault();
-    console.log('Hai cliccato sul link.');
+    fetch('/randomizer').then(function (response) {
+      return response.json();
+    }).then(function (jsonData) {
+      // jsonData is parsed json object received from url
+      console.log(jsonData);
+    })["catch"](function (error) {
+      // handle your errors here
+      console.error(error);
+    });
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {

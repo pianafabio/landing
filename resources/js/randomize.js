@@ -3,7 +3,16 @@ import React from 'react';
 function Randomizer() {
     function handleClick(e) {
       e.preventDefault();
-      console.log('Hai cliccato sul link.');
+      fetch('/randomizer')
+      .then(response => response.json())
+      .then((jsonData) => {
+        // jsonData is parsed json object received from url
+        console.log(jsonData)
+      })
+      .catch((error) => {
+        // handle your errors here
+        console.error(error)
+      })
     }
   
     return (
