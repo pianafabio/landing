@@ -17,6 +17,5 @@ require('./bootstrap');
 
 // require('./components/Example');
 require('./render_page');
-require('./randomize');
 
 require('./footer');

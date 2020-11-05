@@ -73980,8 +73980,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./render_page */ "./resources/js/render_page.js");
 
-__webpack_require__(/*! ./randomize */ "./resources/js/randomize.js");
-
 __webpack_require__(/*! ./footer */ "./resources/js/footer.js");
 
 /***/ }),
@@ -74155,17 +74153,6 @@ var Footer = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Footer, null), document.getElementById('footer'));
-
-/***/ }),
-
-/***/ "./resources/js/randomize.js":
-/*!***********************************!*\
-  !*** ./resources/js/randomize.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/vagrant/code/landing/resources/js/randomize.js'");
 
 /***/ }),
 
@@ -74694,6 +74681,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../images/modulo/text/icon/cta/Group 8/random_3.svg */ "./resources/images/modulo/text/icon/cta/Group 8/random_3.svg");
 /* harmony import */ var _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -74716,21 +74705,152 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 
 
+var Icon_default = /*#__PURE__*/function (_React$Component) {
+  _inherits(Icon_default, _React$Component);
 
-var Slide4 = /*#__PURE__*/function (_React$Component) {
-  _inherits(Slide4, _React$Component);
+  var _super = _createSuper(Icon_default);
 
-  var _super = _createSuper(Slide4);
+  function Icon_default() {
+    _classCallCheck(this, Icon_default);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Icon_default, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")));
+    }
+  }]);
+
+  return Icon_default;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+var Icon_random = /*#__PURE__*/function (_React$Component2) {
+  _inherits(Icon_random, _React$Component2);
+
+  var _super2 = _createSuper(Icon_random);
+
+  function Icon_random() {
+    _classCallCheck(this, Icon_random);
+
+    return _super2.apply(this, arguments);
+  }
+
+  _createClass(Icon_random, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-lg-4 text-center random_item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default.a
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")));
+    }
+  }]);
+
+  return Icon_random;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+var Icons = /*#__PURE__*/function (_React$Component3) {
+  _inherits(Icons, _React$Component3);
+
+  var _super3 = _createSuper(Icons);
+
+  function Icons() {
+    var _this;
+
+    _classCallCheck(this, Icons);
+
+    _this = _super3.call(this);
+
+    _defineProperty(_assertThisInitialized(_this), "updateIcons", function () {
+      fetch('/randomizer').then(function (response) {
+        return response.json();
+      }).then(function (jsonData) {
+        console.log(jsonData);
+
+        _this.setState({
+          random_state: true
+        });
+      })["catch"](function (error) {
+        // handle your errors here
+        console.error(error);
+      });
+    });
+
+    _this.state = {
+      random_state: false
+    };
+    return _this;
+  }
+
+  _createClass(Icons, [{
+    key: "render",
+    value: function render() {
+      if (!this.state.random_state) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row",
+          id: "randoms"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon_default, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-12 text-center"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          id: "randomizer",
+          onClick: this.updateIcons
+        }, "Randomizer"))));
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row",
+          id: "randoms"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon_random, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-12 text-center"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          id: "randomizer",
+          onClick: this.updateIcons
+        }, "Randomizer"))));
+      }
+    }
+  }]);
+
+  return Icons;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+var Slide4 = /*#__PURE__*/function (_React$Component4) {
+  _inherits(Slide4, _React$Component4);
+
+  var _super4 = _createSuper(Slide4);
 
   function Slide4() {
-    var _this;
+    var _this2;
 
     _classCallCheck(this, Slide4);
 
@@ -74738,20 +74858,21 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this2 = _super4.call.apply(_super4, [this].concat(args));
 
-    _defineProperty(_assertThisInitialized(_this), "updateIcons", function () {
+    _defineProperty(_assertThisInitialized(_this2), "updateIcons", function () {
       fetch('/randomizer').then(function (response) {
         return response.json();
       }).then(function (jsonData) {
         console.log(jsonData);
+        Icons.changeContent();
       })["catch"](function (error) {
         // handle your errors here
         console.error(error);
       });
     });
 
-    return _this;
+    return _this2;
   }
 
   _createClass(Slide4, [{
@@ -74765,29 +74886,7 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
         className: "row"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-12 text-center"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sezione 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row",
-        id: "randoms"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 text-center random_item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_modulo_text_icon_cta_Group_7_random_2_svg__WEBPACK_IMPORTED_MODULE_1___default.a
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 text-center random_item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_modulo_text_icon_cta_Group_6_random_1_svg__WEBPACK_IMPORTED_MODULE_2___default.a
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 text-center random_item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_modulo_text_icon_cta_Group_8_random_3_svg__WEBPACK_IMPORTED_MODULE_3___default.a
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Random 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-12 text-center"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        id: "randomizer",
-        onClick: this.updateIcons
-      }, "Randomizer"))))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sezione 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icons, null))));
     }
   }]);
 
