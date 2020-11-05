@@ -10,6 +10,8 @@ Componenti Aggiuntivi:
 
 ### To Do ###
 - Scrollbar
-- Slider per blocco random
-- Sistemazione slider blocchi 2 e 3
 
+### Installazione ###
+1) Clonare il repo git
+2) Avviare laravel
+3) Avviare react con comando npm run 
