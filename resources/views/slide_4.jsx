@@ -31,7 +31,7 @@ class Slide4 extends React.Component{
 
   checkOrder = ( ) =>{
 
-    console.log("reset");
+    this.setState({sfondo: ""});
     var last_element = null;
     var cresc = true;
     var decresc = true;
@@ -48,10 +48,10 @@ class Slide4 extends React.Component{
       last_element = parseInt(element.number);
     });
     if( cresc ){
-      console.log("crescente");
+      this.setState({sfondo: "sfondo_verde"});
     }
     if( decresc ){
-      console.log("decrescente");
+      this.setState({sfondo: "sfondo_rosso"});
     }
   }
 
@@ -65,15 +65,15 @@ class Slide4 extends React.Component{
               ]
             });  
     });
-    this.checkOrder();
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log( prevState );
+    if( prevState.items != this.state.items ){
+      this.checkOrder();
+    }
   }
 
   updateIcons = () => {
-    this.setState({random_state: true});
     this.getDatafromJSON();
   };
 
@@ -132,7 +132,7 @@ class Slide4 extends React.Component{
               </div>
             </div>
             <div className="row" id="randoms">
-              { !this.state.random_state ? render_fisso() : render_random() }
+              { ( this.state.items.length < 1 ) ? render_fisso() : render_random() }
               </div>
                 <div className="row">
                   <div className="col-12 text-center">

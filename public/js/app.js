@@ -74766,7 +74766,10 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "checkOrder", function () {
-      console.log("reset");
+      _this.setState({
+        sfondo: ""
+      });
+
       var last_element = null;
       var cresc = true;
       var decresc = true;
@@ -74786,11 +74789,15 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
       });
 
       if (cresc) {
-        console.log("crescente");
+        _this.setState({
+          sfondo: "sfondo_verde"
+        });
       }
 
       if (decresc) {
-        console.log("decrescente");
+        _this.setState({
+          sfondo: "sfondo_rosso"
+        });
       }
     });
 
@@ -74800,15 +74807,9 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
           items: [res.data.data.elemento_1, res.data.data.elemento_2, res.data.data.elemento_3]
         });
       });
-
-      _this.checkOrder();
     });
 
     _defineProperty(_assertThisInitialized(_this), "updateIcons", function () {
-      _this.setState({
-        random_state: true
-      });
-
       _this.getDatafromJSON();
     });
 
@@ -74823,7 +74824,9 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
   _createClass(Slide4, [{
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps, prevState) {
-      console.log(prevState);
+      if (prevState.items != this.state.items) {
+        this.checkOrder();
+      }
     }
   }, {
     key: "render",
@@ -74869,7 +74872,7 @@ var Slide4 = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sezione 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         id: "randoms"
-      }, !this.state.random_state ? render_fisso() : render_random()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.items.length < 1 ? render_fisso() : render_random()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-12 text-center"
