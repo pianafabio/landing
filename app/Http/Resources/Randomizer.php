@@ -36,7 +36,7 @@ class Randomizer extends JsonResource
             ),
             array(
                 'number' => '4',
-                'icon' => 'random_4',
+                'icon' => 'random_2',
                 'titolo' => 'Random 4',
                 'sottotitolo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             )
