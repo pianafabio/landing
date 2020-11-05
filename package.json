@@ -430,6 +430,7 @@
     "normalize-url": "^3.3.0",
     "npm-run-path": "^2.0.2",
     "nth-check": "^1.0.2",
+    "nuka-carousel": "^4.7.2",
     "num2fraction": "^1.2.2",
     "object-assign": "^4.1.1",
     "object-copy": "^0.1.0",

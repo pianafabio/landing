@@ -30,7 +30,7 @@ class Footer extends React.Component{
                 <footer>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-10 offset-lg-1 d-lg-flex justify-content-between align-items-center">
+                            <div className="col-lg-10 offset-lg-1 d-md-flex justify-content-between align-items-center">
                                 <div className="footer_links">
                                     <a href="#">Lorem</a>
                                     <a href="#">Ipsum dolor</a>
@@ -45,7 +45,7 @@ class Footer extends React.Component{
                             </div>
                         </div>
                         <div className="row footer_distance">
-                            <div className="col-lg-10 offset-lg-1 d-lg-flex justify-content-between align-items-center">
+                            <div className="col-lg-10 offset-lg-1 d-md-flex justify-content-between align-items-center">
                                 <div className="footer_info d-flex justify-content-left align-items-center footer_logo">
                                     <img src={logo_footer} />
                                     <div>

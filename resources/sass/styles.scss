@@ -12,6 +12,13 @@ $blue_4: #DAE6F4;
 $blue_5: #4A90E2;
 $blue_6: #8CBAF0;
 
+
+button{
+    &:focus{
+        outline: none;
+    }
+}
+
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -32,6 +39,12 @@ body{
         border-radius: 0;
         width: 25px;
         height: 40px;
+        @include media-breakpoint-down(md){
+            bottom: 20px;
+        }
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
     }
     #blocco_1{
         position: relative;
@@ -47,8 +60,33 @@ body{
             .navbar-brand{
                 margin-right: 0;
             }
+            @include media-breakpoint-down(sm){
+                $left: 15px;
+                width: calc( 100% - #{($left * 2)});
+                margin: 0 #{$left};
+            }
+            .navbar-toggler{
+                border: 0;
+                padding: 0;
+                border-radius: 0;
+                color: $white;
+                font-size: 40px;
+                line-height: 40px;
+            }
             #menu{
                 margin-left: 92px;
+                @include media-breakpoint-down(md){
+                    margin-left: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 110px;
+                    .navbar-nav{
+                        flex-direction: row;
+                    }
+                    .nav-item{
+                        margin-bottom: 20px;
+                    }
+                }
                 .nav-item{
                     margin-right: 35px;
                     &:last-child{
@@ -94,12 +132,25 @@ body{
             @include media-breakpoint-down(lg){
                 width: calc( 100% - #{( $left * 2 )});
             }
+            @include media-breakpoint-down(md){
+                bottom: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                $left: 15px;
+                left: $left;
+                width: calc( 100% - #{( $left * 2 )});
+            }
             h2{
                 font-weight: 600;
                 margin: 0 0 21px;
                 font-size: 58px;
                 line-height: 57px;
                 letter-spacing: 0;
+                @include media-breakpoint-down(md){
+                    font-size: 29px;
+                    line-height: 28.5px;
+                    margin-bottom: 16px;
+                }
             }
             h3{
                 font-weight: 300;
@@ -107,6 +158,11 @@ body{
                 line-height: 35px;
                 letter-spacing: 0;
                 margin: 0 0 25px;
+                @include media-breakpoint-down(md){
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                }
             }
             p{
                 font-size: 15px;
@@ -114,6 +170,9 @@ body{
                 letter-spacing: 0;
                 line-height: 24px;
                 margin: 0;
+                @include media-breakpoint-down(md){
+                    line-height: 18px;
+                }
             }
             a{
                 display: inline-block;
@@ -131,11 +190,17 @@ body{
                 &:hover{
                   text-decoration: none;
                 }
+                @include media-breakpoint-down(md){
+                    margin-top: 30px;
+                }
             }
         }
     }
     #blocco_2{
         padding: 99px 0 105.65px;
+        @include media-breakpoint-down(sm){
+            padding: 55px 0;
+        }
         position: relative;
         &::after{
             content: "";
@@ -149,6 +214,9 @@ body{
             z-index: -1;
             border-top-left-radius: 50vw;
             border-top-right-radius: 50vw;
+        }
+        img{
+            max-width: 100%;
         }
         .container{
             position: relative;
@@ -165,6 +233,10 @@ body{
             .alternate_color{
                 color: $blue_4;
             }
+            @include media-breakpoint-down(md){
+                font-size: 29px;
+                line-height: 28.5px;
+            }
         }
         h3{
             margin-bottom: 13.5px;
@@ -173,6 +245,10 @@ body{
             line-height: 35px;
             color: $blue_5;
             text-align: center;
+            @include media-breakpoint-down(md){
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
         p{
             text-align: center;
@@ -181,6 +257,9 @@ body{
         }
         .blocco_2_link{
             margin-bottom: 113.31px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 60px;
+            }
             a{
                 display: inline-block;
                 width: 200px;
@@ -204,12 +283,19 @@ body{
     }
     #blocco_3{
         padding: 98px 0 101px;
+        @include media-breakpoint-down(sm){
+            padding: 55px 0;
+        }
         h2{
             font-weight: 600;
             color: $blue_5;
             font-size: 52px;
             line-height: 56px;
             margin-bottom: 62px;
+            @include media-breakpoint-down(md){
+                font-size: 29px;
+                line-height: 28.5px;
+            }
         }
         .prodotto{
             color: $blue_5;
@@ -220,16 +306,22 @@ body{
             position: relative;
             height: 100%;
             display: block;
-            &:hover{
-                color: $white;
-                background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
-                box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
-                text-decoration: none;
+            @include media-breakpoint-down(md){
+                height: auto;
+            }
+            @include media-breakpoint-up(lg){
+                &:hover{
+                    color: $white;
+                    background: linear-gradient(347.250178514065deg, $blue_1, $blue_3);
+                    box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
+                    text-decoration: none;
+                }
             }
             .prodotto_immagine{
                 height: 280px;
                 img{
                     height: auto;
+                    max-width: 100%;
                 }
             }
             .prodotto_info{
@@ -240,6 +332,10 @@ body{
                 line-height: 32px;
                 font-weight: 600;
                 margin-bottom: 2px;
+                @include media-breakpoint-down(md){
+                    font-size: 20px;
+                    line-height: 24px;
+                }
             }
             h4{
                 font-size: 16px;
@@ -265,14 +361,18 @@ body{
                 }
             }
             .prodotto_link{
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 0;
                 font-weight: bold;
                 text-transform: uppercase;
                 font-size: 16px;
                 line-height: 24px;
+                margin-top: 15px;
+                @include media-breakpoint-up(lg){
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                    margin-top: 0;
+                }
             }
         }
         .confronto_modelli{
@@ -292,6 +392,9 @@ body{
                 &:hover{
                   text-decoration: none;
                 }
+                @include media-breakpoint-down(sm){
+                    margin-top: 30px;
+                }
             }
         }
     }
@@ -299,22 +402,43 @@ body{
         background-color: $blue_6;
         color: $white;
         padding: 87px 0 97px;
+        transition: all .3s ease;
+        @include media-breakpoint-down(sm){
+            padding: 45px 0;
+        }
+        &.sfondo_verde{
+            background-color: green;
+        }
+        &.sfondo_rosso{
+            background-color: red;
+        }
         h2{
             font-size: 52px;
             line-height: 56px;
             font-weight: 600;
             margin-bottom: 16px;
+            @include media-breakpoint-down(md){
+                font-size: 29px;
+                line-height: 28.5px;
+            }
         }
         h3{
             font-weight: 300;
             font-size: 30px;
             line-height: 35px;
             margin-bottom: 24px;
+            @include media-breakpoint-down(md){
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
         p{
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 50px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 25px;
+            }
         }
         .random_item{
             h3{
@@ -322,11 +446,18 @@ body{
                 font-weight: 600;
                 font-size: 30px;
                 line-height: 32px;
+                @include media-breakpoint-down(md){
+                    font-size: 20px;
+                    line-height: 24px;
+                }
             }
             p{
                 font-size: 15px;
                 line-height: 24px;
                 margin-bottom: 0px;
+            }
+            @include media-breakpoint-down(md){
+                margin-bottom: 15px;
             }
         }
         #randomizer{
@@ -346,18 +477,28 @@ body{
             &:hover{
                 text-decoration: none;
             }
+            @include media-breakpoint-down(sm){
+                margin-top: 30px;
+            }
         }
     }
     #contattaci{
         background-color: $blue_5;
         color: $white;
         padding: 97px 0 100px;
+        @include media-breakpoint-down(sm){
+            padding: 50px 0;
+        }
         h2{
             font-weight: 300;
             font-size: 30px;
             line-height: 32px;
             strong{
                 font-weight: bold;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 20px;
+                line-height: 24px;
             }
         }
         button{
@@ -374,6 +515,9 @@ body{
             padding: 20px;
             box-shadow: 0 6px 25px 0 rgba(0,0,0,0.2);
             border: 0;
+            @include media-breakpoint-down(sm){
+                margin-top: 30px;
+            }
         }
     }
     footer{
@@ -396,6 +540,9 @@ body{
             }
         }
         .footer_social{
+            @include media-breakpoint-down(sm){
+                margin-top: 15px;
+            }
             a{
                 color: $blue_4;
                 margin-right: 4px;
@@ -419,6 +566,9 @@ body{
             img{
                 margin-right: 21px;
             }
+            @include media-breakpoint-down(md){
+                margin-bottom: 15px;
+            }
         }
         .footer_breadcrumbs{
             font-size: 16px;
@@ -426,5 +576,17 @@ body{
             color: $blue_5;
             font-weight: 300;
         }
+    }
+}
+
+.sliderController{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: $white;
+    font-size: 30px;
+    line-height: 30px;
+    &.sliderControllerProd{
+        color: $blue_5;
     }
 }

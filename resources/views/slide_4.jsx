@@ -17,17 +17,6 @@ class Slide4 extends React.Component{
       items: [],
     }
   }
-  crescente = () => {
-    this.setState({sfondo: 'sfondo_verde'});
-  };
-
-  decrescente = () => {
-    this.setState({sfondo: 'sfondo_rosso'});
-  };
-
-  reset = () => {
-    this.setState({sfondo: ''});
-  };
 
   checkOrder = ( ) =>{
 

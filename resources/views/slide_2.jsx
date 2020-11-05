@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from 'nuka-carousel';
 
 import image_1 from './../images/modulo/text/cta/img/slide_2_img.png';
 
@@ -6,6 +7,12 @@ import gallery_1 from './../images/Gallery 01.png';
 import gallery_2 from './../images/Gallery 02.png';
 import gallery_3 from './../images/Gallery 03.png';
 import gallery_4 from './../images/Gallery 04.png';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas);
 
 class Slide2 extends React.Component{
   render() {
@@ -28,7 +35,7 @@ class Slide2 extends React.Component{
                 </div>
               </div>
             </div>
-            <div className="row row_gallery">
+            <div className="row row_gallery d-none d-lg-flex">
               <div className="col-lg-8">
                 <img src={gallery_1} className="img-fluid"/>
               </div>
@@ -36,12 +43,30 @@ class Slide2 extends React.Component{
                 <img src={gallery_2} className="img-fluid"/>
               </div>
             </div>
-            <div className="row">
+            <div className="row d-none d-lg-flex">
               <div className="col-lg-7">
                 <img src={gallery_3} className="img-fluid"/>
               </div>
               <div className="col-lg-5">
                 <img src={gallery_4} className="img-fluid"/>
+              </div>
+            </div>
+            <div className="row row_gallery d-flex d-lg-none">
+              <div className="col-12">
+                <Carousel
+                  renderCenterLeftControls={({ previousSlide }) => (
+                    <button className="sliderController" onClick={previousSlide}><FontAwesomeIcon icon={'angle-left'} /></button>
+                  )}
+                  renderCenterRightControls={({ nextSlide }) => (
+                    <button className="sliderController" onClick={nextSlide}><FontAwesomeIcon icon={'angle-right'} /></button>
+                  )}
+                  renderBottomCenterControls={null}
+                >
+                  <img src={gallery_2} className="img-fluid"/>
+                  <img src={gallery_2} className="img-fluid"/>
+                  <img src={gallery_2} className="img-fluid"/>
+                  <img src={gallery_2} className="img-fluid"/>
+                </Carousel>
               </div>
             </div>
           </div>

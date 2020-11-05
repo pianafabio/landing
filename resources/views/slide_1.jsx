@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fas);
+
 import gruppo_1 from './../images/Servizio/Group.jpg'
 import logo from './../images/header3/logo-header.jpg'
 import button_scroll from './../images/scroll.svg';
@@ -9,18 +15,18 @@ class Slide1 extends React.Component{
     return (
       <>
         <div id="blocco_1">
-          <nav className="navbar navbar-expand-lg justify-content-between">
-            <div className="d-flex align-items-center">
+          <nav className="navbar navbar-expand-lg justify-content-between d-block d-lg-flex">
+            <div className="d-flex align-items-center justify-content-between">
               <a className="navbar-brand" href="#">
                 <img src={logo} className="logo" alt="Logo" />
               </a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <FontAwesomeIcon icon={'bars'} />
               </button>
 
               <div className="collapse navbar-collapse" id="menu">
                 <ul className="navbar-nav mr-auto">
-                  <li className="nav-item active">
+                  <li className="nav-item">
                     <a className="nav-link" href="#">Voce 1</a>
                   </li>
                   <li className="nav-item">
@@ -32,7 +38,7 @@ class Slide1 extends React.Component{
                 </ul>
               </div>
             </div>
-            <div>
+            <div className="d-none d-lg-block">
               <button id="richiedi_info">Richiedi Info</button>
             </div>
           </nav>
